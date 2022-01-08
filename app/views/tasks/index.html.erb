@@ -1,0 +1,18 @@
+<div class='container'>
+  <h1 class="border-bottom">My Tasks</h1>
+
+  <ul class="list-group">
+   <% @tasks.each do |task| %>
+    <li class="list-group-item">
+      <% if task.completed  %>
+        <i class="fas fa-check-square"></i>
+      <% else %>
+        <i class="far fa-square"></i>
+      <% end %>
+      <%= link_to task.title, task_path(task) %> * <%= link_to 'Delete', delete_task_path(task), method: 'delete', data: { confirm: "Are you sure?" }  %>
+    </li>
+   <% end %>
+  </ul>
+
+  <%= link_to "Add new task", new_task_path, class: "btn btn-primary btn-lg"  %>
+</div>

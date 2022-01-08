@@ -1,0 +1,8 @@
+<div class='container'>
+  <h1 class="border-bottom"><%= @task.title %></h1>
+  <h2 class=><%= @task.details %></h2>
+
+  <p> This task is not completed yet <p>
+  <%= link_to "Edit Task", task_edit_path  %><br>
+  <%= link_to 'Back to task list', "/tasks"  %>
+</div>

@@ -1,0 +1,15 @@
+// app/assets/stylesheets/application.scss
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 16px;
+}
+
+h1, h2 {
+  padding: 16px;
+}
